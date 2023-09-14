@@ -1,14 +1,13 @@
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./styles/App.css";
 
 function App() {
   const [inputValue, setInputValue] = useState(0);
+  const myInput = useRef(null)
 
-  const handleConvert = () => {
-    // const value = parseFloat(inputValue).toFixed(3);
-    // const meter =  3.281 //feet
-    // const liter = 0.264 //gallon
-    // const Kilogram = 2.204
+  const handleClick = () => {
+    console.log(myInput)
+    setInputValue(myInput.current.value)
   };
   return (
     <div className="App">
@@ -16,16 +15,15 @@ function App() {
         <h1>Metric/Imperial Unit Conversion</h1>
         <input
           className="value"
-          type="number"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          defaultValue= "0"
+          ref={myInput}
         />
-        <button className="btn-convert" onClick={handleConvert}>
+        <button className="btn-convert" onClick={handleClick}>
           Convert
         </button>
       </div>
       <div className="meassure-container">
-        <h2>Length(Meter/Feet)</h2>
+        <h2>Length (Meter/Feet)</h2>
         <p>
           {inputValue} meters = {parseFloat(inputValue * 3.2808).toFixed(3)}{" "}
           feet | {inputValue} feet ={" "}
