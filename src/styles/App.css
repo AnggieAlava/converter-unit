@@ -1,3 +1,8 @@
+#root{
+    display: flex;
+    justify-content: center;
+}
+
 .App {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
@@ -6,7 +11,8 @@
     align-items: center;
     width: 40em;
     height: 40em;
-    background-color: rgb(101, 90, 165);
+    background: rgb(59,90,91);
+    background: radial-gradient(circle, rgba(59,90,91,1) 0%, rgba(53,54,82,1) 19%, rgba(53,82,69,1) 30%, rgba(44,68,33,1) 51%, rgba(110,120,42,1) 87%);
     border-radius: 15px 0 0 0;
 }
 
@@ -15,7 +21,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(56, 56, 87);
+    background: rgb(90,145,35);
+background: linear-gradient(90deg, rgba(90,145,35,1) 0%, rgba(208,144,54,1) 42%);
     width: 40em;
     height: 15em;
     color: whitesmoke;
@@ -23,7 +30,9 @@
 }
 
 .value {
-    background-color: rgb(101, 90, 165);
+    text-align: center;
+    background: rgb(59,90,91);
+    background: linear-gradient(90deg, rgba(94,150,38,1) 0%, rgba(51,162,179,1) 39%, rgba(29,169,253,1) 54%, rgba(208,144,54,1) 75%);ckground: radial-gradient(circle, rgba(59,90,91,1) 0%, rgba(53,54,82,1) 19%, rgba(53,82,69,1) 30%, rgba(44,68,33,1) 51%, rgba(110,120,42,1) 87%);
     border: 3px solid rgb(243, 172, 31);
     width: 150px;
     height: 100px;
@@ -51,8 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(56, 56, 87);
-    width: 35em;
+    background: linear-gradient(90deg, rgba(90,145,35,1) 0%, rgba(208,144,54,1) 42%);    width: 35em;
     margin-top: 10px;
     color: beige;
 }

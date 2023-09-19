@@ -6,8 +6,8 @@ function App() {
   const myInput = useRef(null)
 
   const handleClick = () => {
-    console.log(myInput)
-    setInputValue(myInput.current.value)
+    setInputValue(myInput.current.value);
+    myInput.current.value = "0";
   };
   return (
     <div className="App">
